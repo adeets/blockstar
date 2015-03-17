@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_screen_intro"
+    android:id="@+id/intro_background">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <ImageView
+            android:id="@+id/start_button"
+            android:src="@drawable/button_start_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:id="@+id/linearLayout1" />
+        <ImageView
+            android:id="@+id/option_button"
+            android:src="@drawable/button_options_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" />
+    </LinearLayout>
+</AbsoluteLayout>
