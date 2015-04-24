@@ -7,10 +7,10 @@ using Android.Views;
 using Android.Views.Animations;
 using System;
 
-namespace BlockStar
+namespace com.axxies.blockstar
 {
     [Activity(MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
-    public class IntroActivity : Activity, View.IOnClickListener
+    internal sealed class IntroActivity : BaseActivity, View.IOnClickListener
     {
         private View m_startButton;
         private View m_optionsButton;
@@ -21,13 +21,13 @@ namespace BlockStar
         private Animation m_slideRightAnimation;
         private EventHandler<Animation.AnimationEndEventArgs> m_eventAnimationEnded;
 
-        /// <summary>Called when the Activity is created.</summary>
+        /// <summary>Called when the Activity is created or the orientation changes.</summary>
         protected override void OnCreate(Bundle bundle)
         {
             // Always call base class.
             base.OnCreate(bundle);
 
-            // Set the view to the view we definied in screen_intro.xml.
+            // Set the view to the view we defined in screen_intro.xml.
             SetContentView(Resource.Layout.screen_intro);
 
             // Initialize our view variables.
@@ -85,12 +85,12 @@ namespace BlockStar
                 return;
             }
 
-            // Depening on which view was clicked, start the correct Activity.
+            // Depending on which view was clicked, start the correct Activity.
             if (view.Id == m_startButton.Id)
             {
                 //TODO: Ignore this for Part 1.
                 //Intent intent = new Intent(BaseContext, PickLevelActivity.class);
-                //m_eventAnimationEnded = delegate { ChangeActivity(new Intent(BaseContext, typeof(LevelSelectActivity))); };
+                //m_eventAnimationEnded = delegate { ChangeActivity(new Intent(BaseContext, typeof(IntroActivity))); };
                 //m_fadeOutAnimation.AnimationEnd += m_eventAnimationEnded;
 
                 // Flicker the start button and fade out the background and options button.
@@ -102,7 +102,7 @@ namespace BlockStar
             {
                 //TODO: Ignore this for Part 1.
                 //Intent intent = new Intent(BaseContext, OptionsActivity.class);
-                //m_eventAnimationEnded = delegate { ChangeActivity(new Intent(BaseContext, typeof(OptionsActivity))); };
+                //m_eventAnimationEnded = delegate { ChangeActivity(new Intent(BaseContext, typeof(IntroActivity))); };
                 //m_fadeOutAnimation.AnimationEnd += m_eventAnimationEnded;
 
                 // Flicker the options button and fade out the background and start button.

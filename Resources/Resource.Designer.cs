@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("BlockStar.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("com.axxies.blockstar.Resource", IsApplication=true)]
 
-namespace BlockStar
+namespace com.axxies.blockstar
 {
 	
 	
@@ -106,17 +106,17 @@ namespace BlockStar
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070000
-			public const int intro_background = 2131165184;
+			// aapt resource value: 0x7f080000
+			public const int intro_background = 2131230720;
 			
-			// aapt resource value: 0x7f070002
-			public const int linearLayout1 = 2131165186;
+			// aapt resource value: 0x7f080002
+			public const int linearLayout1 = 2131230722;
 			
-			// aapt resource value: 0x7f070003
-			public const int option_button = 2131165187;
+			// aapt resource value: 0x7f080003
+			public const int option_button = 2131230723;
 			
-			// aapt resource value: 0x7f070001
-			public const int start_button = 2131165185;
+			// aapt resource value: 0x7f080001
+			public const int start_button = 2131230721;
 			
 			static Id()
 			{
@@ -144,11 +144,57 @@ namespace BlockStar
 			}
 		}
 		
-		public partial class String
+		public partial class Raw
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int app_name = 2131034112;
+			public const int level_music_1 = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int level_music_10 = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int level_music_2 = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int level_music_3 = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int level_music_4 = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int level_music_5 = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public const int level_music_6 = 2131034118;
+			
+			// aapt resource value: 0x7f050007
+			public const int level_music_7 = 2131034119;
+			
+			// aapt resource value: 0x7f050008
+			public const int level_music_8 = 2131034120;
+			
+			// aapt resource value: 0x7f050009
+			public const int level_music_9 = 2131034121;
+			
+			// aapt resource value: 0x7f05000a
+			public const int menu_music = 2131034122;
+			
+			static Raw()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Raw()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int app_name = 2131099648;
 			
 			static String()
 			{
@@ -163,8 +209,8 @@ namespace BlockStar
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int Mono_Android_Theme_Splash = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int Mono_Android_Theme_Splash = 2131165184;
 			
 			static Style()
 			{

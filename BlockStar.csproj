@@ -9,7 +9,7 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlockStar</RootNamespace>
+    <RootNamespace>com.axxies.blockstar</RootNamespace>
     <AssemblyName>BlockStar</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
@@ -47,9 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseActivity.cs" />
     <Compile Include="IntroActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MusicManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -72,6 +74,17 @@
     <AndroidResource Include="Resources\anim\slide_left.xml" />
     <AndroidResource Include="Resources\anim\fade_in.xml" />
     <AndroidResource Include="Resources\anim\fade_out.xml" />
+    <AndroidResource Include="Resources\raw\level_music_10.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_1.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_2.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_3.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_4.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_5.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_6.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_7.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_8.mp3" />
+    <AndroidResource Include="Resources\raw\level_music_9.mp3" />
+    <AndroidResource Include="Resources\raw\menu_music.mp3" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
